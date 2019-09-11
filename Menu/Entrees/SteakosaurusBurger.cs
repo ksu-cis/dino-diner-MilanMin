@@ -2,7 +2,7 @@
 
 namespace DinoDiner.Menu.Entrees
 {
-    public class SteakosaurusBurger
+    public class SteakosaursBurger
     {
         private bool bun = true;
         private bool pickle = true;
@@ -17,7 +17,7 @@ namespace DinoDiner.Menu.Entrees
             get
             {
                 List<string> ingredients = new List<string>() { "Steakburger Pattie" };
-                if (bun) ingredients.Add("Bun");
+                if (bun) ingredients.Add("Whole Wheat Bun");
                 if (pickle) ingredients.Add("Pickle");
                 if (ketchup) ingredients.Add("Ketchup");
                 if (mustard) ingredients.Add("Mustard");
@@ -25,7 +25,7 @@ namespace DinoDiner.Menu.Entrees
             }
         }
 
-        public SteakosaurusBurger()
+        public SteakosaursBurger()
         {
             this.Price = 5.15;
             this.Calories = 621;

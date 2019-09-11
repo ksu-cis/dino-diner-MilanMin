@@ -17,8 +17,9 @@ namespace DinoDiner.Menu.Entrees
             {
                 List<string> ingredients = new List<string>() { "Chicken Breast" };
                 ingredients.Add("Flour Tortilla");
-                if (dressing) ingredients.Add("Dressing");
-                if (lettuce) ingredients.Add("Lettuce");
+                if (dressing) ingredients.Add("Ceasar Dressing");
+                if (lettuce) ingredients.Add("Romaine Lettuce");
+                if (cheese) ingredients.Add("Parmesan Cheese");
                 return ingredients;
             }
         }
@@ -37,6 +38,10 @@ namespace DinoDiner.Menu.Entrees
         public void HoldLettuce()
         {
             this.lettuce = false;
+        }
+        public void holdCheese()
+        {
+            this.cheese = false;
         }
     }
 }

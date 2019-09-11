@@ -14,7 +14,11 @@ namespace DinoDiner.Menu.Entrees
         {
             get
             {
-                List<string> ingredients = new List<string>() { numNuggets+" Chicken Nuggets" };
+                List<string> ingredients = new List<string>();
+                for (int i=0; i<numNuggets; i++)
+                {
+                    ingredients.Add("Chicken Nugget");
+                }
                 return ingredients;
             }
         }
